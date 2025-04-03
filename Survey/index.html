@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/T6.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/t6.png" alt="tecnica6"></a>
+        <h1 id="title">Formulario de Inscripción</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/Tecnica6casanova/?locale=es_LA"><i
+                            class="fa-brands fa-facebook fa-2x"></i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="main">
+        <form method="POST" id="survey-form" >
+            <p id="description">¡Hola! Somos la Escuela de Educación Secundaria Técnica N°6. Estaremos encantados de que te inscribas.</p>
+            <label for="name" id="name-label">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Pon el nombre">
+            <span class="divis"></span>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Pon el apellido">
+            <span class="divis"></span>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Pon un email de contacto...">
+            <span class="divis"></span>
+            <label for="telefono" id="number-label">Teléfono:</label>
+            <input type="number" id="number" name="telefono" placeholder="Pon un numero de contacto..." min="1100000000" max="1199999999">
+            <span class="divis"></span>
+            <label for="curso">¿En qué curso querés anotar a tu hijo?</label>
+            <select id="dropdown" name="curso">
+                <option value="curso1">1°</option>
+                <option value="curso2">2°</option>
+                <option value="curso3">3°</option>
+                <option value="curso4">4°</option>
+            </select>
+            <span class="divis"></span>
+            <div class="turnos">
+                <p>¿En qué turno querés inscribirlo?</p>
+                <span class="divis"></span>
+                <div>
+                    <input type="radio" name="turno" value="mañana">
+                    <label>Mañana</label>
+                </div>
+                <div>
+                    <input type="radio" name="turno" value="tarde">
+                    <label>Tarde</label>
+                </div>
+            </div>
+            <span class="divis"></span>
+            <p>¿Cómo oiste de nosotros?</p>
+            <span class="divis"></span>
+            <div class="fuentes">
+                <div>
+                    <input type="checkbox" name="fuentes" value="val1">
+                    <label for="fuentes1">Facebook</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val2">
+                    <label for="fuentes1">Amigos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val3">
+                    <label for="fuentes1">Familiares</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val4">
+                    <label for="fuentes1">Conocidos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val5">
+                    <label for="fuentes1">Google Maps</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val6">
+                    <label for="fuentes4">Página Web</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="fuentes" value="val7">
+                    <label for="fuentes4">Otros</label>
+                </div>
+                <span class="divis"></span>
+                <label>¿Querés dejar alguna sugerencia?</label>
+                <textarea ></textarea>
+                <span class="divis"></span>
+
+                <button type="submit" id="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <h5>Todos los derechos reservados © - Morillo Santiago 7°5</h5>
+    </footer>
+</body>
+
+</html>
