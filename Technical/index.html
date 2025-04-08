@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Técnica - JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <h1>Documentación JS</h1>
+        <div class="nav-burger" id="nav-burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#comofunciona">Como Funciona</a></li>
+            <li><a href="#variables">Variables</a></li>
+            <li><a href="#condicionales">Condicionales</a></li>
+            <li><a href="#bucles">Bucles</a></li>
+            <li><a href="#funciones">Funciones</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#react">React</a></li>
+            <li><a href="#nodejs">Nodejs</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro">
+            <header>
+                <h2>Introducción</h2>
+            </header>
+            <article>
+                <p>JavaScript es un lenguaje de programación que permite implementar funcionalidades complejas en
+                    páginas web.Es un lenguaje interpretado, orientado a objetos y basado en prototipos.
+                JavaScript es un lenguaje de programación que permite implementar funcionalidades complejas en
+                    páginas web.</p>
+            </article>
+        </section>
+        <section class="main-section" id="comofunciona">
+            <header>
+                <h2>¿Cómo funciona?</h2>
+            </header>
+            <article>
+                <p>JavaScript se ejecuta en el navegador del cliente, lo que significa que no es necesario enviar
+                    solicitudes al servidor para cada acción del usuario.
+                Esto permite una experiencia de usuario más fluida y rápida.
+                Para poder usarlo dentro del navegador, es necesario colocarlo dentro de un etiqueta.</p>
+                <div class="divider-code"> </div>
+                <div class="enc-code">
+                    <code>&lt;script&gt;</code>
+                </div>
+                <div class="divider-code"> </div>
+                <p>Esto se puede hacer directamente entrelazando el HTML de dos formas: </p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+                </div>
+                <div class="divider-code"></div>
+                <p>o: </p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code><p>&emsp;&lt;html&gt;</p><p><i>...head, meta, title...</i></p><p>&emsp;&emsp;&lt;body&gt;</p><p>&emsp;&emsp;&emsp;&lt;script&gt; </p><p> &emsp;&emsp;&emsp;&emsp;let mensaje = "Hola lectores!!"</p> <p>&emsp;&emsp;&emsp;&emsp;alert(mensaje) //Esto imprime el mensaje que había puesto arriba. <button id="boton">Probalo!</button></p> &emsp;&emsp;&emsp;&lt;/script&gt;<p>&emsp;&emsp;&lt;/body&gt;</p><p>&emsp;&lt;/html&gt;</p></code>
+                </div>
+                <div class="divider-code"></div>
+        </section>
+        <section class="main-section" id="variables">
+            <header>
+                <h2>Declaración de variables</h2>
+            </header>
+            <article>
+                <p>En JavaScript, existen dos tipos de variables: las variables primitivas y los objetos.
+                Las variables primitivas son aquellas que contienen un valor único y no se pueden modificar. Estos
+                    tipos de variables se declaran utilizando la palabra clave <code>const</code>.
+                Por otro lado, los objetos son variables que pueden contener varios valores y pueden ser modificados.
+                    Estos tipos de variables se declaran utilizando la palabra clave <code>let</code>.
+                Además, JavaScript tiene una tercera forma de declarar variables que es utilizando la palabra clave
+                    <span class="enc-code"><code>var</code></span>. Sin embargo, esta forma de declarar variables es
+                    considerada como anticuada y no
+                    se recomienda utilizarla.
+                </p>
+                <p>La sintaxis para declarar una variable es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>let nombre = valor;</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="condicionales">
+            <header>
+                <h2>Condicionales</h2>
+            </header>
+            <article>
+                <p>Los condicionales son estructuras de control que nos permiten ejecutar diferentes bloques de código
+                    según una condición.
+                En JavaScript, existe el condicional if, que pregunta si una condicion es verdadera, si no esto y si
+                    no, lo otro.</p>
+                <p>La sintaxis para un if es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>if (condición) {<br>
+                    // Código a ejecutar<br>
+                };</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="bucles">
+            <header>
+                <h2>Bucles</h2>
+            </header>
+            <article>
+                <p>Los bucles son estructuras de control que nos permiten ejecutar un bloque de código varias veces.
+                En JavaScript, existen tres tipos de bucles: for, while y do while.</p>
+                <p>El for funciona yendo de un punto A a un punto B. Por ejemplo, queremos hacer un recorrido en el
+                    rango 1 a 10, entonces podemos hacer que vaya haciendo 1, 2, 3, 4, 5, 6, 7, 8, 9 y 10.</p>
+                <p>Sintaxis del for:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>for (inicialización; condición; incremento) {<br>
+                    // Código a ejecutar<br>
+                };</code>
+                </div>
+
+                <div class="divider-code"></div>
+                <p>El while funciona MIENTRAS (de ahí el while) la condición se cumpla, es decir, sea true</p>
+                <p>Sintaxis del while:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>while (condición) {<br>
+                    // Código a ejecutar<br>
+                };</code>
+                </div>
+                <div class="divider-code"></div>
+                <p>El do while funciona por lo menos una vez, al finalizar el bloque pregunta si se sigue cumpliendo
+                    dicha función para volver a repetirla.</p>
+                <p>La sintaxis para un do while es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>do {<br>
+                    // Código a ejecutar<br>
+                } while (condición);</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="funciones">
+            <header>
+                <h2>Funciones</h2>
+            </header>
+            <article>
+                <p>Las funciones son bloques de código que se pueden llamar varias veces con diferentes parámetros.</p>
+                <p>La sintaxis para declarar una función es la siguiente:</p>
+                <div class="enc-code">
+                    <code>function nombre (parámetros) {<br>
+                    // Código a ejecutar<br>
+                };</code>
+                </div>
+                <p>La sintaxis para llamar a una función es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>nombre (parámetros);</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="eventos">
+            <header>
+                <h2>Eventos</h2>
+            </header>
+            <article>
+                <p>Los eventos son acciones que ocurren en el navegador y que pueden ser detectadas por JavaScript.</p>
+                <p>Existen varios tipos de eventos, como el evento click, el evento submit, el evento load, entre
+                    otros.</p>
+                <p>La sintaxis para detectar un evento es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>elemento.addEventListener("evento", función);</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="react">
+            <header>
+                <h2>React</h2>
+                <img src="./react.png" alt="react" class="img-react">
+            </header>
+            <article>
+                <p>React es una biblioteca de JavaScript para construir interfaces de usuario.
+                React se basa en componentes, que son bloques de código que se pueden reutilizar.
+                </p>
+                <p>La sintaxis para declarar un componente es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>const Nombre = (props) => {<br>
+                    &emsp;return ( <br>
+                    &emsp;&emsp;&lt;div&gt;Contenido&lt;/div&gt;<br>
+                    &emsp;);<br>
+                };</code>
+                </div>
+                <div class="divider-code"></div>
+                <p>La sintaxis para llamar a un componente es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>&lt;Nombre /&gt;</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <section class="main-section" id="nodejs">
+            <header>
+                <h2>Nodejs</h2>
+                <img src="./nodejs-new-pantone-black.png" alt="NodeJs" class="nodejs">
+            </header>
+            <article>
+                <p>Nodejs es un entorno de ejecución de JavaScript que permite ejecutarlo en el lado del servidor.
+                Nodejs utiliza el motor de JavaScript V8 de Google Chrome y es de código abierto.
+                Nodejs proporciona una API para interactuar con el sistema operativo y los recursos del sistema.</p>
+                La sintaxis para importar un módulo en Nodejs es la siguiente:</p>
+                <div class="divider-code"></div>
+                <div class="enc-code">
+                    <code>const módulo = require("módulo");</code>
+                </div>
+                <div class="divider-code"></div>
+            </article>
+        </section>
+        <footer>
+            <h2>Creado por Morillo Santiago - 2025</h2>
+        </footer>
+
+        <script>
+            document.getElementById("boton").addEventListener("click", (e) => {
+                alert("Hola lectores!!");
+            });
+            document.getElementById("nav-burger").addEventListener("click", (e) => {
+                document.getElementById("navbar").classList.toggle("nav-active");
+            });
+        </script>
+    </main>
+</body>
+
+</html>
